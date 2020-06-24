@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    header{
+      height: 60px;
+      background: rosybrown;
+    }
+    .wrap{
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: flex-start;
+      height: 600px;
+
+    }
+    .wrap aside{
+      width: 200px;
+      background: royalblue;
+    }
+    .wrap main{
+      flex: 1;
+      background: darkcyan;
+    }
+    footer{
+      height: 60px;
+      background: darkgoldenrod;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>header</header>
+    <div class="wrap">
+      <aside>aside</aside>
+      <main> 元素不能是以下元素的后代：article、aside、footer、header 或 nav。</main>
+    </div>
+    <footer>footer</footer>
+
+  </div>
+</body>
+
+</html>
