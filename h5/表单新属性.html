@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <main>
+    <form action="demo_form.html">
+      <div>
+        <input type="number" max="10">
+      </div>
+      <div>
+        Enter a date before 1980-01-01:
+        <input type="date" name="bday" max="1979-12-31">
+      </div>
+      <div>
+        Enter a date after 2000-01-01:
+        <input type="datetime" name="bday" min="2000-01-02">
+      </div>
+      <div>
+        Quantity (between 1 and 5):
+        <input type="number" name="quantity" min="1" max="5">
+      </div>
+      <div>
+    
+        <input type="range" name="quantity" min="1" max="5">
+        <input type="color">
+        <input type="time">
+        <input type="url">
+        <input type="week" required>
+        选择图片: <input type="file" name="img" multiple>
+      </div>
+      <div>
+        <input type="submit">
+      </div>
+    </form>
+  </main>
+</body>
+
+</html>
