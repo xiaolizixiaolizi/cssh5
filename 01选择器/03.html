@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .s {
+      margin-right: 30px;
+    }
+     /* .demo xxx:nth-child(n){...}表示.demo元素下的第n个元素（从1开始）,并且当数到的这个元素的标签和xxx标签一模一样，这个样式才会生效 */
+     /* 0 2 4 ...选中所有 偶数行*/
+    /* .demo p:nth-child(2n){
+      background: red;
+    } */
+    /* 3 2 1 0 -1...选中前3行 */
+    /* .demo p:nth-child(-n+3){
+      background: red;
+    } */
+    /* .demo p:nth-child(n+2):nth-child(-n+6){
+      background: red;
+    } */
+    .demo p:not(:last-child){
+      background: red;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="demo">
+    <p>11</p>
+    <p>22</p>
+    <p>33</p>
+    <p>44</p>
+    <p>55</p>
+    <p>66</p>
+    <p>77</p>
+    <p>88</p>
+  </div>
+</body>
+
+</html>
